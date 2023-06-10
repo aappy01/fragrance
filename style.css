@@ -59,8 +59,10 @@ nav{
   color: lightgrey;
   font-weight: 600;
 }
-.menuItem:active{
-  border-bottom: 2px solid #ffffff;
+.menuItem.active{
+  background-color: #C71585;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 /* slider section */
@@ -337,6 +339,10 @@ label{
 .galleryImage{
   width: 100%;
 }
+.galleryImage:hover{
+  transform: scale(1.05);
+  transition: all ease 0.9s;
+}
 .galleryTitle{
   padding: 30px;
   color: #704a83;
@@ -354,9 +360,32 @@ label{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 .nsImage{
   width: 100%;
   height: 80vh;
+}
+.nsTitle{
+  padding-bottom: 20px;
+  font-size: 30px;
+  color: grey;
+}
+.nsTitlesm{
+  padding-bottom: 40px;
+  font-size: 30px;
+  color: #704a83;
+}
+.nsBtn{
+  height: 40px;
+  background: #704a83;
+  color: #fff;
+  border: 0;
+  outline: none;
+  width: 180px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+.nsBtn:hover{
+  transform: scale(1.1);
+  transition: all ease 1.5s;
 }

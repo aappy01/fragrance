@@ -100,10 +100,12 @@ const currentProductPrice = document.querySelector(".productPrice");
 const currentProductType = document.querySelectorAll(".type");
 
 menuItem.forEach((item, index) => {
-  item.addEventListener('click', ()=>{
+  item.addEventListener('click', (e)=>{
     //change current slide
     wrapper.style.transform = `translateX(${-100 * index}vw)`;
-
+    // switch active toggle
+    document.querySelector(".active").classList.remove("active");
+    e.target.classList.add("active");
     //change choosen product
     choosenProduct = products[index]
 
