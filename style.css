@@ -18,6 +18,10 @@ nav{
   background: #704a83;
   color: #fff;
   padding: 20px 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
 .logo{
   font-style: italic;
@@ -64,13 +68,39 @@ nav{
   padding: 5px;
   border-radius: 10px;
 }
+.menu-icon{
+  display: none;
+  z-index: 2;
+}
 
+@media(max-width:600px){
+  body{
+    width: 100%;
+  }
+  nav{
+    padding: 20px 20px;
+    width: 100%;
+    height: auto;
+  }
+  .navBottom{
+    gap: 20px;
+    margin: 2% auto;
+    flex-wrap: wrap;
+  }
+  .menuItem{
+    margin-right: 0;
+  }
+  .search{
+    display: none;
+  }
+}
 /* slider section */
 
 .slider{
   background: url(./img/bg-img.jpg);
   background-position: center;
   background-size: cover;
+  padding-top: 7%;
   /* height: 100vh; */
   clip-path: polygon(0% 15%, 0 0, 15% 0%, 85% 0%, 100% 0, 100% 15%, 100% 78%, 50% 100%, 85% 100%, 15% 100%, 49% 100%, 0 76%);
   overflow: hidden;
@@ -158,7 +188,39 @@ nav{
 .sliderItem:nth-child(4) .sliderPrice{
   border: 2px solid #c4c715;
 }
-
+@media(max-width:600px){
+  .slider{
+    margin-top: 5%;
+    clip-path: none;
+    padding: 10px auto;
+    height: 105vh;
+  }
+  .sliderItem{
+    position: relative;
+  }
+  .sliderImg{
+    margin-top: 14%;
+    z-index: 1;
+  }
+  .sliderImg:nth-child(1){
+    margin-top: 24%;
+  }
+  .sliderImg:nth-child(2){
+    margin-top: 24%;
+  }
+  .sliderTitle{
+    display: none;
+  }
+  .sliderPrice{
+    left: 10px;
+    top: 90%;
+    font-weight: 600;
+  }
+  .buyBtn{
+    right: 10px;
+    top: 100%;
+  }
+}
 /* feature section */
 
 .features{
@@ -188,7 +250,16 @@ nav{
   width: 50%;
   height: 100%;
 }
-
+@media(max-width:600px){
+  .features{
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+  }
+  .feature{
+    padding-bottom: 12px;
+  }
+}
 /* products section */
 .products{
   height: auto;
@@ -333,6 +404,52 @@ label{
   background-color: #704a83;
   cursor: pointer;
 }
+@media(max-width:600px){
+  .products{
+    height: auto;
+    padding: auto 12px;
+    position: relative;
+    clip-path: none;
+    display: block;
+  }
+  .productImg{
+    width: 100%;
+    margin: 5px auto;
+    padding: 2px 5px;
+    position: relative;
+  }
+  .productDetails{
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 100%;
+    padding: 3px 10px;
+    /* color: #704a83; */
+  }
+  .productTitle, .productPrice{
+    font-size: 30px;
+    padding-bottom: 5px;
+  }
+  .productType{
+    display: flex;
+  }
+  .arrowUp {
+    display: none;
+  }
+  .productBtn{
+    position: relative;
+    top: auto;
+    right: auto;
+    margin: 10px;
+  }
+  .type{
+    padding: 12px;
+  }
+  .payment{
+    width: 90%;
+  }
+}
+
 /* gallery section */
 .gallery{
   display: flex;
@@ -354,6 +471,22 @@ label{
   color: #704a83;
   font-family: 'Dancing Script', cursive;
   font-weight: 700;
+}
+
+@media(max-width:600px){
+  .gallery{
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    height: auto;
+  }
+  .galleryItem{
+    padding: 50px;
+  }
+  .galleryImage{
+    border-radius: 10px;
+  }
 }
 /* new season section */
 .newSeason{
@@ -406,6 +539,18 @@ label{
   transform: scale(1.1);
   transition: all ease 1.5s;
 }
+
+@media(max-width:600px){
+  .newSeason{
+    flex-direction: column;
+  }
+  .nsItem:nth-child(1), .nsItem:nth-child(3){
+    display: none;
+  }
+  .video-play{
+    height: auto;
+  }
+}
 /* footer section */
 .footer{
   width: 100%;
@@ -424,4 +569,17 @@ label{
 }
 .social-link{
   margin-right: 22px;
+}
+@media(max-width: 600px){
+  .footer{
+    padding: 5px 10px;
+  }
+  .foot-wrap{
+    flex-direction: column;
+    gap: 12px;
+  }
+  .copyrights-text{
+    font-size: 16px;
+  }
+
 }
