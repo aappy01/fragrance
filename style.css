@@ -306,6 +306,12 @@ label{
 .productType{
   display: flex;
 }
+.arrowUp {
+  position: absolute;
+  right: 10%;
+  top: 80%;
+  color: #fff;
+}
 .type{
   border: 2px solid #704a83;
   margin-right: 20px;
@@ -346,20 +352,29 @@ label{
 .galleryTitle{
   padding: 30px;
   color: #704a83;
-  font-style: italic;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
 }
 /* new season section */
 .newSeason{
   display: flex;
+  align-items: center;
 }
 .nsItem{
   flex: 1;
-  background-color: black;
-  color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.video-play{
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+.nsGroup{
+  position: absolute;
+  text-align: center;
 }
 .nsImage{
   width: 100%;
@@ -367,8 +382,10 @@ label{
 }
 .nsTitle{
   padding-bottom: 20px;
-  font-size: 30px;
-  color: grey;
+  font-size: 40px;
+  color: #000;
+  font-weight: 400;
+  font-family: 'Lilita One', cursive;
 }
 .nsTitlesm{
   padding-bottom: 40px;
@@ -388,4 +405,23 @@ label{
 .nsBtn:hover{
   transform: scale(1.1);
   transition: all ease 1.5s;
+}
+/* footer section */
+.footer{
+  width: 100%;
+  height: 10vh;
+  background-color: #704a83;
+  color: #fff;
+  padding: 10px 5%;
+}
+.foot-wrap{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.copyrights-text{
+  font-size: 20px
+}
+.social-link{
+  margin-right: 22px;
 }

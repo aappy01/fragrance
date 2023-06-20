@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Lilita+One&display=swap" rel="stylesheet">
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   <title>Ecom: Fragrance</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -114,9 +116,14 @@
         <div class="type">B</div>
         <div class="type">C</div>
       </div>
+      <a href="#navbar" class="arrowUp">
+        <iconify-icon icon="emojione-monotone:up-arrow" width="50px"></iconify-icon>
+      </a>
     </div>
     
     <button class="productBtn" type="submit">Buy Now</button>
+
+    
 
     <div class="payment">
       <h1 class="payTitle">Personal Information</h1>
@@ -164,12 +171,17 @@
       <img src="./img/newS.jpg" class="nsImage">
     </div>
     <div class="nsItem">
-      <h3 class="nsTitlesm">NEW ARRIVALS</h3>
-      <h1 class="nsTitle">New Season</h1>
-      <h1 class="nsTitle">New Collection</h1>
-      <a href="#navbar">
-        <button class="nsBtn">CHOOSE YOUR STYLE</button>
-      </a>
+      <video class="video-play" autoplay loop muted>
+        <source src="./video/fragrance.mp4" type="video/mp4">
+      </video>
+      <div class="nsGroup">
+        <h3 class="nsTitlesm">NEW ARRIVALS</h3>
+        <h1 class="nsTitle">New Season</h1>
+        <h1 class="nsTitle">New Collection</h1>
+        <a href="#navbar">
+          <button class="nsBtn">CHOOSE YOUR STYLE</button>
+        </a>
+      </div>
     </div>
     <div class="nsItem">
       <img src="./img/newS2.jpg" class="nsImage">
@@ -177,8 +189,24 @@
   </div>
 
   <div class="footer">
-
+    <div class="foot-wrap">
+      <div class="copyrights">
+        <p class="copyrights-text">Copyrights &copy Aappy Inc. 2023</p>
+      </div>
+      <div class="socials">
+        <a href="#" class="social-link">
+          <iconify-icon icon="logos:facebook" width="30px" ></iconify-icon>
+        </a>
+        <a href="#" class="social-link">
+          <iconify-icon icon="devicon:twitter" width="30px"></iconify-icon>
+        </a>
+        <a href="#" class="social-link">
+          <iconify-icon icon="devicon:github" width="30px"></iconify-icon>
+        </a>
+      </div>
+    </div>
   </div>
+  
   
   <script src="app.js"></script>
 </body>

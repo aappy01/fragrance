@@ -37,7 +37,7 @@ const products = [
       },
       {
         code: "B",
-        img: ".img/Tom Ford - Lost Cherry-.png",
+        img: "./img/Tom Ford - Black Orchid.png",
       },
       {
         code: "C",
@@ -80,7 +80,8 @@ const products = [
         img: "./img/Gucci  -flora.png",
       },
       {
-        code: "./img/Gucci - gucci.png",
+        code: "B",
+        img: "./img/Gucci - gucci.png"
       },
       {
         code: "C",
